@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>WebDeveloper</title>
+</head>
+
+<body class="bg-blue-gray">
+    <div class="container py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="container text-center">
+                    <div class="row py-3">
+                        <h1><b>Web</b>Developer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="display: flex; flex-flow: column;">
+            <div class="col-4 mx-auto shadow-lg">
+                <div class="row">
+                    <div class="col-12 text-center bg-light border-bottom-0 rounded-top pt-3 shadow">
+                        <form method="POST">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="row py-2">
+                                        <h5>formulario de afiliación</h5>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input class="form-control border-end-0" type="text" name="name" id="name" placeholder="Nombre Completo" aria-describedby="name-wrapper">
+                                        <span class="input-group-text bg-white" id="name-wrapper">
+                                            <i class="material-icons">
+                                                account_box
+                                            </i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <input class="form-control border-end-0" type="email" name="email" id="email" placeholder="Email" aria-describedby="email-wrapper">
+                                        <span class="input-group-text bg-white" id="email-wrapper">
+                                            <i class="material-icons">
+                                                email
+                                            </i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <input class="form-control border-end-0" type="text" name="phone" id="phone" placeholder="Telefono" aria-describedby="phone-wrapper">
+                                        <span class="input-group-text bg-white" id="phone-wrapper">
+                                            <i class="material-icons">
+                                                local_phone
+                                            </i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <input class="form-control border-end-0" type="text" name="likes" id="likes" placeholder="Me gusta..." aria-describedby="likes-wrapper">
+                                        <a class="btn btn-success" onclick="addLikes()">Añadir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center bg-light border-top-0 rounded-bottom px-4 shadow">
+                        <div class="row justify-content-center pb-3">
+                            <div class="col-3 rounded-start border " style="display: flex;">
+                                <i class="material-icons md-48 bg-success text-light p-1 rounded my-auto mx-auto">
+                                    outlined_flag
+                                </i>
+                            </div>
+                            <div class="col-9 border border-start-0 rounded-end" style="display: flex;">
+                                <table id="likesTable" class="table table-bordered bdr my-auto">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Gusto</th>
+                                            <th scope="col">%</th>
+                                            <th scope="col">Editar</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="bottom" class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-start bg-light rounded-bottom px-4 pt-0 pb-3">
+                                <a id="redirect" class="disabled">Ir a Site de P web</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
